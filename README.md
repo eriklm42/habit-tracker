@@ -53,16 +53,11 @@ Before starting :checkered_flag:, you need to have installed.
   
 
 ```bash
-
-# Clone this project
-
-$ git clone https://github.com/andrelinos/nlw-11-habits
-
   
 
 # Access api folder
 
-$ cd nlw/api
+$ cd api
 
   
 
@@ -74,7 +69,7 @@ $ npm i
 
 # Access web folder
 
-$ cd nlw/web
+$ cd web
 
   
 
@@ -86,8 +81,7 @@ $ npm i
 
 # Access mobile folder
 
-$ cd nlw/mobile
-
+$ cd mobile
   
 
 # Install dependencies
