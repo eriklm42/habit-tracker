@@ -1,28 +1,36 @@
 -- CreateTable
 CREATE TABLE "habits" (
-    "id" TEXT NOT NULL PRIMARY KEY,
+    "id" TEXT NOT NULL,
     "title" TEXT NOT NULL,
-    "created_at" DATETIME NOT NULL
+    "created_at" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "habits_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "habit_week_days" (
-    "id" TEXT NOT NULL PRIMARY KEY,
+    "id" TEXT NOT NULL,
     "habit_id" TEXT NOT NULL,
-    "week_day" INTEGER NOT NULL
+    "week_day" INTEGER NOT NULL,
+
+    CONSTRAINT "habit_week_days_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "days" (
-    "id" TEXT NOT NULL PRIMARY KEY,
-    "date" DATETIME NOT NULL
+    "id" TEXT NOT NULL,
+    "date" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "days_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "day_habits" (
-    "id" TEXT NOT NULL PRIMARY KEY,
+    "id" TEXT NOT NULL,
     "day_id" TEXT NOT NULL,
-    "habit_id" TEXT NOT NULL
+    "habit_id" TEXT NOT NULL,
+
+    CONSTRAINT "day_habits_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
